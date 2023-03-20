@@ -1,0 +1,48 @@
+img {
+  width: 100%;
+}
+
+.fa-arrow-left {
+  font-size: 2rem;
+  margin-left: -17.5rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.menu__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.menu__title h2 {
+  font-family: shrikhand;
+}
+
+h3 {
+  margin: 1rem 0 6px 0;
+}
+
+.ligne {
+  width: 6%;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #7eebd2;
+}
+
+.repas {
+  display: flex;
+  align-items: last baseline;
+  justify-content: space-between;
+}
+
+.check {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=style.css.map */
