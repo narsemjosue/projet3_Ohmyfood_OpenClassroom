@@ -1,10 +1,18 @@
 
 img{
+  height: 300px;
   width: 100%;
+ 
 }
 .fa-arrow-left{
   font-size: 2rem;
   margin-left: -17.5rem;
+}
+
+.main__menu{
+  padding-top: 3rem;
+  border-top-left-radius: 50px;
+  border-top-right-radius:50px;
 }
 .menu{
   display: flex;
@@ -37,5 +45,5 @@ margin-bottom: 5px;
 .check{
   display: flex;
   align-items: baseline;
-  justify-content:space-evenly;
+  justify-content:space-between;
 }
