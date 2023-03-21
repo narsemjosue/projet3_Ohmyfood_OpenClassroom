@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body{
   margin: 0px;
   padding: 0px;
@@ -85,7 +85,7 @@ a{
   }
  
 }
-.restaurant, .main__menu{
+.restaurant{
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -128,11 +128,12 @@ a{
 .far{
   margin-right: 0.5rem;
   &:hover{
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     -webkit-background-clip: text;
     font-weight: 900;
     background-image: linear-gradient( #ab74f0, #ca69d4);
     -webkit-text-fill-color: transparent;
+    
 }
  
 }

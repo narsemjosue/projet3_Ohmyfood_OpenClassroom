@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 body {
   margin: 0px;
   padding: 0px;
@@ -88,7 +88,7 @@ a {
   color: #837f7f;
 }
 
-.restaurant, .main__menu {
+.restaurant {
   display: flex;
   flex-direction: column;
   padding: 1rem;
