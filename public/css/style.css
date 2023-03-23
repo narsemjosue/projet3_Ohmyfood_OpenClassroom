@@ -125,17 +125,6 @@ a {
   top: 1rem;
 }
 
-.far {
-  margin-right: 0.5rem;
-}
-.far:hover {
-  transition: all 0.5s ease-in-out;
-  -webkit-background-clip: text;
-  font-weight: 900;
-  background-image: linear-gradient(#ab74f0, #ca69d4);
-  -webkit-text-fill-color: transparent;
-}
-
 img {
   width: 100%;
 }

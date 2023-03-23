@@ -1,0 +1,44 @@
+.far {
+  margin-right: 0.5rem;
+}
+.far:hover {
+  transition: all 0.5s ease-in-out;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  background-image: linear-gradient(#ab74f0, #ca69d4);
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.repas:hover .check {
+  margin-right: 0;
+  transition: all 0.5s;
+}
+.repas:hover .check i {
+  animation-name: rot;
+  animation-duration: 1s;
+}
+
+@keyframes apparution {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.categorie {
+  animation-name: apparution;
+  animation-duration: 2s;
+}
+
+/*# sourceMappingURL=animation.css.map */

@@ -1,117 +1,114 @@
-
-img{
+img {
   height: 300px;
   width: 100%;
- 
+
 }
-.fa-arrow-left{
+.fa-arrow-left {
   font-size: 2rem;
   margin-left: -100px;
 }
-
-.main__menu{
+.main__menu {
   display: flex;
   flex-direction: column;
   padding: 0rem;
   background-color: #e9e9e9;
   padding: 25px 10px 10px 10px;
-  border-top-left-radius:40px;
-  border-top-right-radius:40px;
-  h3{
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  h3 {
     font-weight: 0;
     text-transform: uppercase;
   }
-  h3, p {
+  h3,
+  p {
     color: rgb(88 81 81);
-
   }
 }
-.content1{
+.content1 {
   background-image: url("../../public/images/restaurants/menu-palette_gout.jpg");
-
 }
-.content2{
+.content2 {
   background-image: url("../../public/images/restaurants/menu-note-enchantee.jpg");
-
 }
-.content3{
-  background-image: url("../../public/images/restaurants/menu-francaise.jpg");
-
+.content3 {
+ background-image: url("../../public/images/restaurants/menu-francaise.jpg");
 }
-.content4{
+.content4 {
   background-image: url("../../public/images/restaurants/menu-delice-sens.jpg");
-  
 }
-.menu__content{
+.menu__content {
   margin-top: 0px;
   background-repeat: no-repeat;
-  background-size:100% 16%;
+  background-size: 100% 16%;
   padding-top: 13rem;
 }
-.menu{
+.menu {
   display: flex;
   flex-direction: column;
-align-content: center;
+  align-content: center;
 }
-.commander{
+.commander {
   display: flex;
   justify-content: center;
   margin: 1rem 0rem;
 }
-.menu__title{
+.menu__title {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  h2{
+  h2 {
     font-family: shrikhand;
   }
 }
-h3{
+h3 {
   margin: 1rem 0 6px 0;
 }
-.ligne{
+.ligne {
   width: 6%;
-height: 3px;
-margin-bottom: 5px;
+  height: 3px;
+  margin-bottom: 5px;
   background-color: #7eebd2;
 }
-.last__ligne, h4, p{
+.last__ligne,
+h4,
+p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .repas {
-  display: flex;
-  align-items: last baseline;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  align-items: end;
   justify-content: space-between;
   overflow: hidden;
- &:hover .check{
-  margin-right: 0;
-  transition: all 0.5s;
-  i{
-    animation-name: rot;
-    animation-duration: 0.5s;
-  }
- }
 }
-.check{
+.check {
   height: 30px;
   display: flex;
   align-items: baseline;
-  justify-content:space-between;
+  justify-content: space-between;
   width: 7rem;
   margin-right: -4rem;
-  .btn-check{
-    padding: 3rem 1rem;
+  margin-bottom: 1.1rem;
+  .btn-check {
+    height: 30px;
+    margin-top: -3.5rem;
+    padding: 2.5rem 1rem 2.5rem 1rem;
     background-color: #7eebd2;
     color: #ffffff;
   }
 }
-@keyframes rot {
-  0%{
-    transform: rotate(-270deg);
+@media screen and (min-width: 900px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .categorie{
+     margin: 1rem;
+    }
   }
-  100%{
-    transform: rotate(0);
+  .menu__content{
+    background-size: 100% 40%;
+    padding-top: 20rem;
   }
 }
