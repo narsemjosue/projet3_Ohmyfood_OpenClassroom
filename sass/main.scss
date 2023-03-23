@@ -160,6 +160,8 @@ footer{
   .fonctionnement ul{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
   footer{
     text-align: center;
