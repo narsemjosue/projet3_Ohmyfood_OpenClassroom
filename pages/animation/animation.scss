@@ -2,7 +2,7 @@
   background-color: rgb(255, 255, 255);
   position: fixed;
   height: 100vh;
-  z-index: 1;
+  z-index: 3;
   inset: 0;
   opacity: 0.9;
   display: grid;
@@ -12,9 +12,8 @@
   font-family: shrikhand;
   font-size: 30px;
   animation: chargement 0.2s 4s forwards;
-
   .text{
-    z-index: 2;
+  position: absolute;
   }
   .circle {
     position: absolute;
@@ -29,15 +28,11 @@
 
 @keyframes chargement {
   0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.5;
+    transform: scale(1);
   }
 
   100% {
-    opacity: 0;
+    transform: scale(0);
   }
 }
 
@@ -82,9 +77,9 @@
 }
 
 ul li:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: transform 0.4s;
-  background-image: linear-gradient(#ab74f0, #ca69d4);
+  background:#ac74f01c;
   font-weight: bolder;
 }
 .repas, .card {
