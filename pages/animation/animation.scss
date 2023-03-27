@@ -1,46 +1,52 @@
-.loader{
-  background-color:rgb(255, 255, 255);
+.loader {
+  background-color: rgb(255, 255, 255);
   position: fixed;
   height: 100vh;
   z-index: 1;
- inset: 0;
- opacity: 0.9;
- display: grid;
- place-items: center;
- text-transform: uppercase;
- color: white;
- font-size: 30px;
- animation: chargement 0.2s 4s forwards;
- .text{
-  z-index: 2;
- }
- .circle{
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  inset: 0;
+  opacity: 0.9;
   display: grid;
-  z-index: 0;
-  animation: arc 4s;
- }
+  place-items: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  animation: chargement 0.2s 4s forwards;
+
+  .text{
+    z-index: 2;
+  }
+  .circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: grid;
+    z-index: 0;
+    animation: arc 4s;
+  }
 }
+
 @keyframes chargement {
-  0%{
+  0% {
     opacity: 1;
   }
-  50%{
+
+  50% {
     opacity: 0.5;
   }
-  100%{
+
+  100% {
     opacity: 0;
   }
 }
+
 @keyframes arc {
- 
+
   0% {
     transform: rotate(0deg);
     box-shadow: 1px 10px 2px #9356DC;
   }
+
   50% {
     transform: rotate(180deg);
     box-shadow: 1px 10px 2px #FF79DA;
@@ -49,16 +55,19 @@
   100% {
     transform: rotate(360deg);
     box-shadow: 3px 10px 2px #75edcf;
-  }}
+  }
+}
+
 .far {
   margin-right: 0.5rem;
-  &:hover{
+
+  &:hover {
     transition: all .5s ease-in-out;
     -webkit-background-clip: text;
     font-weight: 900;
-    background-image: linear-gradient( #ab74f0, #ca69d4);
+    background-image: linear-gradient(#ab74f0, #ca69d4);
     -webkit-text-fill-color: transparent;
-}
+  }
 }
 
 @keyframes rot {
@@ -70,6 +79,18 @@
     transform: rotate(0);
   }
 }
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+  background-image: linear-gradient(#ab74f0, #ca69d4);
+  font-weight: bolder;
+}
+.repas, .card {
+  &:hover{
+  transform: scale(1.03);
+  transition: transform 0.7s;
+}}
 
 .repas {
   &:hover .check {
