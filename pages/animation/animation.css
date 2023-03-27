@@ -1,7 +1,59 @@
+.loader {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+  inset: 0;
+  opacity: 0.9;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  animation: chargement 0.2s 4s forwards;
+}
+.loader .text {
+  z-index: 2;
+}
+.loader .circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: grid;
+  z-index: 0;
+  animation: arc 4s;
+}
+
+@keyframes chargement {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes arc {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 10px 2px #9356DC;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 10px 2px #FF79DA;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 3px 10px 2px #75edcf;
+  }
+}
 .far {
   margin-right: 0.5rem;
 }
-.far:hover {
+.far:hover:before {
   transition: all 0.5s ease-in-out;
   -webkit-background-clip: text;
   font-weight: 900;
