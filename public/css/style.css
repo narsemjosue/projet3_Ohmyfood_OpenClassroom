@@ -12,6 +12,7 @@ header {
   align-items: center;
   text-align: center;
   font-size: 1rem;
+  box-shadow: 0 0 10px #878687;
 }
 header h1 {
   margin: 0px;
@@ -31,10 +32,10 @@ a {
 }
 
 * .localisation {
-  box-shadow: inset 0px 6px 18px rgb(167, 161, 161);
   padding: 1rem;
   text-align: center;
-  background-color: rgb(226, 222, 222);
+  background-color: #e8e6e8;
+  box-shadow: 0px 0px 10px #878687;
 }
 
 .presentation {
@@ -146,7 +147,7 @@ footer h3 {
   margin-left: 1rem;
 }
 
-@media screen and (min-width: 900px) {
+@media (min-width: 900px) and (max-width: 1500px) {
   .main__restaurant {
     display: flex;
     flex-direction: row;
@@ -162,6 +163,18 @@ footer h3 {
   }
   footer {
     text-align: center;
+  }
+}
+@media (min-width: 550px) and (max-width: 900px) {
+  .main__restaurant {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  .restaurant, .fonctionnement {
+    padding: 2rem;
+  }
+  .card {
+    margin: 1rem;
   }
 }
 
