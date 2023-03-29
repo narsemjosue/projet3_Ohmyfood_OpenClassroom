@@ -109,7 +109,7 @@ a {
 .restaurant .card .nom_resto {
   display: flex;
   justify-content: space-between;
-  align-items: baseligne;
+  align-items: baseline;
 }
 .restaurant .card img {
   border-top-right-radius: 20px;
