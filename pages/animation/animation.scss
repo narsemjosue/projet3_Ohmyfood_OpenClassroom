@@ -12,9 +12,11 @@
   font-family: shrikhand;
   font-size: 30px;
   animation: chargement 0.2s 4s forwards;
-  .text{
-  position: absolute;
+
+  .text {
+    position: absolute;
   }
+
   .circle {
     position: absolute;
     width: 200px;
@@ -77,19 +79,21 @@
 }
 
 ul li:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   transition: transform 0.4s;
-  background:#ac74f01c;
-  font-weight: bolder;
+  background: #ac74f01c;
 }
-.repas, .card {
-  &:hover{
-  transform: scale(1.03);
-  transition: transform 0.7s;
-}}
+
+.repas,
+.card {
+  &:hover {
+    transform: scale(1.03);
+    transition: transform 0.7s;
+  }
+}
 
 .repas {
-  &:hover .check {
+  &:hover .btn-check {
     margin-right: 0;
     transition: all 0.5s;
 

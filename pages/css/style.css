@@ -12,7 +12,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 0rem;
-  background-color: #e9e9e9;
+  background-color: #f6f5f5;
   padding: 25px 10px 10px 10px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -90,25 +90,24 @@ p {
 
 .repas {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  align-items: end;
-  justify-content: space-between;
+  grid-template-columns: repeat(3, auto);
   overflow: hidden;
-}
-
-.check {
-  height: 30px;
-  display: flex;
-  align-items: baseline;
   justify-content: space-between;
-  width: 7rem;
-  margin-right: -4rem;
-  margin-bottom: 1.1rem;
+  box-shadow: 0 0 5px #a3a3a3;
+  padding: 0px;
 }
-.check .btn-check {
-  height: 30px;
-  margin-top: -3.5rem;
-  padding: 2.5rem 1rem 2.5rem 1rem;
+.repas .prix {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0.9rem;
+}
+.repas .btn-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  margin-right: -3rem;
   background-color: #7eebd2;
   color: #ffffff;
 }

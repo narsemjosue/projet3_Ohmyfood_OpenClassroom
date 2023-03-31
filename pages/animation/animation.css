@@ -68,10 +68,9 @@
   }
 }
 ul li:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   transition: transform 0.4s;
   background: rgba(172, 116, 240, 0.1098039216);
-  font-weight: bolder;
 }
 
 .repas:hover, .card:hover {
@@ -79,11 +78,11 @@ ul li:hover {
   transition: transform 0.7s;
 }
 
-.repas:hover .check {
+.repas:hover .btn-check {
   margin-right: 0;
   transition: all 0.5s;
 }
-.repas:hover .check i {
+.repas:hover .btn-check i {
   animation-name: rot;
   animation-duration: 1s;
 }
