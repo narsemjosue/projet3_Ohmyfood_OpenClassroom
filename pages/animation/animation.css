@@ -73,7 +73,8 @@ ul li:hover {
   background: rgba(172, 116, 240, 0.1098039216);
 }
 
-.repas:hover, .card:hover {
+.repas:hover,
+.card:hover {
   transform: scale(1.03);
   transition: transform 0.7s;
 }

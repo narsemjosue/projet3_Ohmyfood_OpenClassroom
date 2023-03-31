@@ -12,11 +12,9 @@
   font-family: shrikhand;
   font-size: 30px;
   animation: chargement 0.2s 4s forwards;
-
   .text {
     position: absolute;
   }
-
   .circle {
     position: absolute;
     width: 200px;
@@ -37,28 +35,22 @@
     transform: scale(0);
   }
 }
-
 @keyframes arc {
-
   0% {
     transform: rotate(0deg);
     box-shadow: 1px 10px 2px #9356DC;
   }
-
   50% {
     transform: rotate(180deg);
     box-shadow: 1px 10px 2px #FF79DA;
   }
-
   100% {
     transform: rotate(360deg);
     box-shadow: 3px 10px 2px #75edcf;
   }
 }
-
 .far {
   margin-right: 0.5rem;
-
   &:hover {
     transition: all .5s ease-in-out;
     -webkit-background-clip: text;
@@ -67,23 +59,19 @@
     -webkit-text-fill-color: transparent;
   }
 }
-
 @keyframes rot {
   0% {
     transform: rotate(-270deg);
   }
-
   100% {
     transform: rotate(0);
   }
 }
-
 ul li:hover {
   transform: scale(1.02);
   transition: transform 0.4s;
   background: #ac74f01c;
 }
-
 .repas,
 .card {
   &:hover {
@@ -91,7 +79,6 @@ ul li:hover {
     transition: transform 0.7s;
   }
 }
-
 .repas {
   &:hover .btn-check {
     margin-right: 0;
@@ -103,20 +90,16 @@ ul li:hover {
     }
   }
 }
-
 @keyframes apparution {
   0% {
     transform: translateY(50%);
     opacity: 0;
   }
-
   100% {
     transform: translateY(0%);
     opacity: 1;
   }
-
 }
-
 .categorie {
   animation-name: apparution;
   animation-duration: 2s;
