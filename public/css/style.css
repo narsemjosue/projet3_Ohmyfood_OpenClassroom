@@ -149,7 +149,7 @@ footer h3 {
   margin-left: 1rem;
 }
 
-@media (min-width: 900px) and (max-width: 1500px) {
+@media (min-width: 900px) and (max-width: 2000px) {
   .main__restaurant {
     display: flex;
     flex-direction: row;
