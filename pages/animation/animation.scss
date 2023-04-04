@@ -11,7 +11,7 @@
   color: rgb(0, 0, 0);
   font-family: shrikhand;
   font-size: 30px;
-  animation: chargement 0.2s 4s forwards;
+  animation: chargement 0.2s 3s forwards;
   .text {
     position: absolute;
   }
@@ -22,7 +22,7 @@
     border-radius: 50%;
     display: grid;
     z-index: 0;
-    animation: arc 4s;
+    animation: arc 3s;
   }
 }
 
